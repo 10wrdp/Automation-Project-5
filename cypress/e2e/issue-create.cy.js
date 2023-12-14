@@ -27,7 +27,7 @@ describe('Issue create', () => {
       //Type value to title input field
       //Order of filling in the fields is first description, then title on purpose
       //Otherwise filling title first sometimes doesn't work due to web page implementation
-      cy.get('input[name="title"]').type('TEST_TITLE');
+      cy.get('input[name="title"]').click().type('TEST_TITLE');
       
       //Select Lord Gaben from reporter dropdown
       cy.get('[data-testid="select:userIds"]').click();
